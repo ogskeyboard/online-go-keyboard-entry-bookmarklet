@@ -13,7 +13,7 @@
 						x = String.fromCharCode(x.charCodeAt(0)-1);
 						
 					if (y>0 && y<26 && x.charCodeAt(0)>=97 && x.charCodeAt(0)<=115) {
-						y = String.fromCharCode((20-y)+64);	
+						y = String.fromCharCode((goban.height+1-y)+64);	
 						
 						x=x.toLowerCase();
 						y=y.toLowerCase();
