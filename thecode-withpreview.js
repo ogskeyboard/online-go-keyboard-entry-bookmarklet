@@ -37,17 +37,13 @@
 						x = x.charCodeAt(0)-97;
 						
 						if (y>=0 && y<goban.height && x>=0 && x<goban.width) {
-							//console.log([x,y]);
 							if (goban.__last_pt.valid) {
 								var b = goban.last_hover_square; 
 								goban.last_hover_square = null; 
 								goban.drawSquare(b.x, b.y);
 							}
 							goban.__last_pt = { valid:true, i: x, j: y };
-							goban.last_hover_square = {
-								"x": x,
-								"y": y
-							};
+							goban.last_hover_square = {"x": x,"y": y};
 							goban.drawSquare(x, y);
 						}
 					}
