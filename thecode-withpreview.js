@@ -1,5 +1,4 @@
 (function(){ 
-	window.__bm_last = null;
 	if ($("#bookmarklet-move").length==0) {
 		$("#game-controls").prepend("<input placeholder='Type coords (ie: q17), press enter' type='text' id='bookmarklet-move' style='color:black !important;font-weight:bold;background:#F5E59F !important;height:50px;width:94%;margin:10px;outline:2px solid #0A0 !important;text-transform: uppercase;' />");
 	
